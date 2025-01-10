@@ -25,4 +25,5 @@ urlpatterns = [
     path('testimonial/', testimonial_views.testimonial, name='testimonial'),
     path('services/', services_views.services, name='services'),
     path('admin/', admin.site.urls),
+    path('', include('portfolio.urls')),
 ]
