@@ -30,12 +30,6 @@ For Admin access with relevant sign-in information:
   - [Agile Methodologies - Project Management](#agile-methodologies---project-management)
     - [MoSCoW Prioritization](#moscow-prioritization)
   - [User Stories](#user-stories)
-    - [Visitor User Stories](#visitor-user-stories)
-    - [Epic - User Profile](#epic---user-profile)
-    - [Epic - Articles](#epic---articles)
-    - [Epic - Booking](#epic---booking)
-    - [Epic - Photo Gallery](#epic---photo-gallery)
-    - [Epic - Visit Us/Reviews](#epic---visit-usreviews)
   - [Scope Plane](#scope-plane)
   - [Structural Plane](#structural-plane)
   - [Skeleton \& Surface Planes](#skeleton--surface-planes)
@@ -54,28 +48,28 @@ For Admin access with relevant sign-in information:
 - [Deployment](#deployment)
   - [Connecting to GitHub](#connecting-to-github)
   - [Django Project Setup](#django-project-setup)
-  - [Cloudinary API](#cloudinary-api)
-  - [Elephant SQL](#elephant-sql)
   - [Heroku deployment](#heroku-deployment)
   - [Clone project](#clone-project)
   - [Fork Project](#fork-project)
 - [Credits](#credits)
   - [Code](#code)
   - [Media](#media)
-    - [Additional reading/tutorials/books/blogs](#additional-readingtutorialsbooksblogs)
   - [Acknowledgements](#acknowledgements)
 
   ## Overview
 
-Sharp Sound & Vision is a web application which displays a portfolio of videography projects to attract clients and collaborators. Users are invited to:
+Sharp Sound & Vision is a web application which displays a portfolio of videography projects to attract clients and collaborators. Users and admin are invited to:
 
-- Create or edit content related to the About, Services and Portfolio pages.
-- Register an account to post a testimonial.
+- Create or edit content related to the Services and Portfolio pages.
+- Register an account to leave a post on the Testimonials page.
 - Discover more about the services provided and about the business.
 
 # UX - User Experience
 
 ## Design Inspiration
+
+My friend came up with the name Sharp Sound & Vision for her business and as soon as she told me, I had visions of a clean and slick site which has a professional yet unique feel.
+
 
 ### Colour Scheme
 
@@ -97,21 +91,21 @@ I chose to follow the MoSCoW Prioritization method for SS&V, identifying and lab
   
 - **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
 - **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
-- **Won't Haves**: the features or components that either no longer fit the project's brief or are of very low priority for this release. 
 
 ## User Stories
 
 User stories and features recorded and managed via a project board on [GitHub Projects](https://github.com/users/phoebeW17/projects/6)
 
-### Visitor User Stories
+### User Stories
 
 | User Story | Priority |
 |----------------------------------------------------------------------------------------------------------------------------|---------------|
-| | **MUST HAVE** |
-| | **MUST HAVE** |
-| |
-| | **MUST HAVE** |
-| | **MUST HAVE** |
+| As a **Site User** I would like to **register an account** so that I can **create on a post.** | **MUST HAVE** |
+| As a **potential client**, I want to **read testimonials from previous clients** so that I can **gauge the videographer's reliability and professionalism.** | **MUST HAVE** |
+| As the **site administrator**, I want to **update the pages on the site**  so that I can **promote and organise my work.** | **MUST HAVE** |
+| As a **potential client**, I want to **see the services Sharp S&V offers**, so that I can **see what is most appropriate for my project.** | **SHOULD HAVE** |
+| As a **returning client**, I want to **see updates and new projects on the website** so that I can **stay informed about the videographer’s recent work.** | **SHOULD HAVE** |
+| As a **potential client**, I want to **see an about page**, so that I can **know more about the videographer's professional background and approach to projects.**  | **COULD HAVE** |
 
 ## Scope Plane
 
@@ -130,4 +124,57 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 ### Security
 
 **AllAuth**  
+
+**Defensive Design**  
+
+# Features
+
+## CRUD Functionality
+
+## Feature Showcase 
+  
+*For features showcase, screenshots of the features in use were taken on Laptop/iPad Air/iPhone X*
+
+## Future Features
+
+# Technologies & Languages Used
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- [Git](https://git-scm.com/) used for version control.
+- [Github](https://www.github.com) used for online storage of codebase and Projects tool.
+- [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
+- [Heroku](https://www.heroku.com) was used to host the SS&V application.
+
+
+## Libraries & Frameworks
+
+Further information is available in the [requirements.txt file](requirements.txt)
+
+## Tools & Programs
+
+# Testing
+
+# Deployment
+  
+## Connecting to GitHub 
+
+## Django Project Setup
+
+## Heroku deployment
+
+## Clone project
+
+## Fork Project
+
+# Credits
+
+## Code
+
+## Media
+
+## Acknowledgements
+
 
