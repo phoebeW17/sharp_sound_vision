@@ -103,12 +103,31 @@ I chose to follow the MoSCoW Prioritization method for SS&V, identifying and lab
 
 User stories and features recorded and managed via a project board on [GitHub Projects](https://github.com/users/phoebeW17/projects/6)
 
-EDIT THESE!
+### Visitor User Stories
 
 | User Story | Priority |
 |----------------------------------------------------------------------------------------------------------------------------|---------------|
-| As a **user**, I would like to **view the websites home page** so that I can **learn about it and the services it offers** | **MUST HAVE** |
-| As a **user**, I can **find the websites navigation area** so that I **may easily navigate around the website** | **MUST HAVE** |
-| As a **user**, I can **see the sites social media links at the bottom of the webpage** so that I can **visit, contact the business and follow them online** | **MUST HAVE** |
-| As a **user**, I can **view any error pages with a 'Home' button** so that I **can get back to the homepage easily** | **MUST HAVE** |
-| As a **user**, I want **to see a message when I have successfully/unsuccessfully completed an action** so that I can **receive feedback from my interaction with the website** | **MUST HAVE** |
+| | **MUST HAVE** |
+| | **MUST HAVE** |
+| |
+| | **MUST HAVE** |
+| | **MUST HAVE** |
+
+## Scope Plane
+
+## Structural Plane
+
+## Skeleton & Surface Planes
+
+### Wireframes
+
+**Mobile/Tablet view for:**  
+
+**Desktop view for:**
+
+### Database Schema - Entity Relationship Diagram
+
+### Security
+
+**AllAuth**  
+
