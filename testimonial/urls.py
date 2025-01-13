@@ -1,0 +1,7 @@
+# portfolio/urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.testimonial_view, name='testimonial'),
+]
