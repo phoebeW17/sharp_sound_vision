@@ -70,8 +70,21 @@ Sharp Sound & Vision is a web application which displays a portfolio of videogra
 
 My friend came up with the name Sharp Sound & Vision for her business and as soon as she told me, I had visions of a clean and slick site which has a professional yet unique feel.
 
+I chose to make a mood-board via Pinterest so I could gather inspiration and visuals. Please find the link here: [Pinterest Board](https://pin.it/3HVshY5Uh)
+
 
 ### Colour Scheme
+
+Driven by the inspiration gathered on Pinterest, I found that a neutral set of colours would work best to achieve both a classy and accessible look to the site. In the explore section of [Adobe Color](https://color.adobe.com/search?q=Neutral%20palette&t=term) I found the Palette of Persia. I also tested these with the Adobe Color Contrast Checker.
+
+![screenshot of colour scheme](documentation/images/AdobeColor-Palette%20of%20Persia_%20Brand%20Identity%20for%20Art%20Gallery.jpeg)  
+*Colour Scheme for Sharp Sound & Vision website*
+
+![screenshot of the contrast checker](documentation/images/colour%20contrast%20checker.png)
+*Colour Scheme Contrast Checker*
+
+![screenshot of the colour blind safe test](documentation/images/COLOUR%20BLIND%20TEST.png)
+*Colour Blind Test*
 
 ### Font
 
@@ -154,6 +167,10 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 Further information is available in the [requirements.txt file](requirements.txt)
 
 ## Tools & Programs
+
+- Adobe Color
+- Google Fonts
+- Pinterest
 
 # Testing
 
