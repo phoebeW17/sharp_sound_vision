@@ -1,7 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-# Create your views here.
-
-def services(request):
-    return HttpResponse('<h1>Services</h1>')
+def services_view(request):
+    return render(request, 'services/services.html')

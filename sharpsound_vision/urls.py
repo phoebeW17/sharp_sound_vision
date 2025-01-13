@@ -21,10 +21,8 @@ from testimonial import views as testimonial_views
 from services import views as services_views
 
 urlpatterns = [
-    path('', include('portfolio.urls')),
     path('admin/', admin.site.urls),
-    path('portfolio/', portfolio_views.home, name='home'),
-    path('services/', services_views.services, name='services'),
-    path('summernote/', include('django_summernote.urls')),
+    path('portfolio/', include('portfolio.urls')),    
+    path('services/', include('services.urls')),
     path('testimonial/', testimonial_views.testimonial, name='testimonial'),
 ]
