@@ -44,6 +44,7 @@ For Admin access with relevant sign-in information:
 - [Technologies \& Languages Used](#technologies--languages-used)
   - [Libraries \& Frameworks](#libraries--frameworks)
   - [Tools \& Programs](#tools--programs)
+  - [AI Usage](#ai-usage)
 - [Testing](#testing)
 - [Deployment](#deployment)
   - [Connecting to GitHub](#connecting-to-github)
@@ -109,16 +110,17 @@ I chose to follow the MoSCoW Prioritization method for SS&V, identifying and lab
 
 User stories and features recorded and managed via a project board on [GitHub Projects](https://github.com/users/phoebeW17/projects/6)
 
-### User Stories
-
 | User Story | Priority |
 |----------------------------------------------------------------------------------------------------------------------------|---------------|
 | As a **Site User** I would like to **register an account** so that I can **create on a post.** | **MUST HAVE** |
 | As a **potential client**, I want to **read testimonials from previous clients** so that I can **gauge the videographer's reliability and professionalism.** | **MUST HAVE** |
 | As the **site administrator**, I want to **update the pages on the site**  so that I can **promote and organise my work.** | **MUST HAVE** |
+| As a **site user** I want to **navigate the site to find what section I want to access and explore** so that I can **find out more about the site.** | **MUST HAVE** |
 | As a **potential client**, I want to **see the services Sharp S&V offers**, so that I can **see what is most appropriate for my project.** | **SHOULD HAVE** |
 | As a **returning client**, I want to **see updates and new projects on the website** so that I can **stay informed about the videographer’s recent work.** | **SHOULD HAVE** |
 | As a **potential client**, I want to **see an about page**, so that I can **know more about the videographer's professional background and approach to projects.**  | **COULD HAVE** |
+| As a **site user** I want to **see the social links and contact details clearly** so that **I can connect to the filmmaker.**  | **COULD HAVE** |
+
 
 ## Scope Plane
 
@@ -128,9 +130,82 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 
 ### Wireframes
 
+The wireframes for SS&V were created in Balsamiq. It is useful to quickly create wireframes with it's collection of templates for different devices and viewpoints. It was important to think of how I wanted the site to be viewed on tablets and desktops as well as mobiles so Balsamiq was a good tool to use.
+
 **Mobile/Tablet view for:**  
 
+- About
+- Services
+- Portfolio
+- Testimonials
+
+<details open>
+    <summary>Mobile About Page Wireframe</summary>  
+    <img src="documentation/wireframes/about mob.png">  
+</details>
+
+<details>
+    <summary>Tablet About Page Wireframe</summary>  
+    <img src="documentation/wireframes/about tab.png">  
+</details>
+
+<details>
+    <summary>Mobile Services Page Wireframe</summary>  
+    <img src="documentation/wireframes/services mob.png">  
+</details>
+
+<details>
+    <summary>Tablet Services Page Wireframe</summary>  
+    <img src="documentation/wireframes/services tab.png">  
+</details>
+
+<details>
+    <summary>Mobile Portfolio Page Wireframe</summary>  
+    <img src="documentation/wireframes/portfolio mob.png">  
+</details>
+
+<details>
+    <summary>Tablet Portfolio Page Wireframe</summary>  
+    <img src="documentation/wireframes/portfolio tab.png">  
+</details>
+
+<details>
+    <summary>Mobile Testimonials Page Wireframe</summary>  
+    <img src="documentation/wireframes/test mob.png">  
+</details>
+
+<details>
+    <summary>Tablet Testimonials Page Wireframe</summary>  
+    <img src="documentation/wireframes/testimonials tab.png">  
+</details>
+<br>
+
 **Desktop view for:**
+
+- About
+- Services
+- Portfolio
+- Testimonials
+
+<details>
+    <summary>Desktop About Page Wireframe</summary>  
+    <img src="documentation/wireframes/about desk.png">  
+</details>
+
+<details>
+    <summary>Desktop Services Page Wireframe</summary>  
+    <img src="documentation/wireframes/services desk.png">  
+</details>
+
+<details>
+    <summary>Desktop Portfolio Page Wireframe</summary>  
+    <img src="documentation/wireframes/portfolio desk.png">  
+</details>
+
+<details>
+    <summary>Desktop Testimonials Page Wireframe</summary>  
+    <img src="documentation/wireframes/testimonials desk.png">  
+</details>
 
 ### Database Schema - Entity Relationship Diagram
 
@@ -157,7 +232,7 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 - JavaScript
 - Python
 - [Git](https://git-scm.com/) used for version control.
-- [Github](https://www.github.com) used for online storage of codebase and Projects tool.
+- [Github](https://www.github.com) used for online storage of codebase and the Projects tool.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the SS&V application.
 
@@ -169,8 +244,41 @@ Further information is available in the [requirements.txt file](requirements.txt
 ## Tools & Programs
 
 - Adobe Color
+- Balsamiq for Wireframes
 - Google Fonts
 - Pinterest
+
+## AI Usage
+
+#### Tools used: 
+
+I used Microsoft CoPilot in the browser as well as the chat function and pair programmer in VS Code.
+
+#### Example Uses:
+
+ - Use AI tools to assist in
+code creation
+
+ - Use AI tools to assist in
+debugging code
+
+  <details open>
+      <summary>CoPilot Deployment Troubleshooting and Bug Fix</summary>  
+      <img src="documentation/images/copilot deploy bug fix.png">  
+  </details>
+
+
+
+- Use AI tools to optimize
+code for performance and user
+experience
+
+- Use AI tools to create
+automated unit tests
+
+#### Reflection on AI Tools: 
+
+I found the browser version of CoPilot to be useful as it was unobtrusive towards my code project but did have the drawback of not being able to view the sections of code I am working on. However, for the purpose of trouble-shooting I found this most useful.
 
 # Testing
 
@@ -188,10 +296,18 @@ Further information is available in the [requirements.txt file](requirements.txt
 
 # Credits
 
+- Amy Richardson from Code Institute for the ReadMe structure.
+
 ## Code
+
+- Code Institute Learning Materials (Highlighted by comments in project).
 
 ## Media
 
 ## Acknowledgements
+
+Amy Richardson from Code Institute for her unwavering positivity and support to myself and the bootcamp SY cohort.
+
+Spencer Barriball
 
 
