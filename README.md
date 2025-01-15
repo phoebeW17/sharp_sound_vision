@@ -93,9 +93,19 @@ Driven by the inspiration gathered on Pinterest, I found that a neutral set of c
  
 ## Strategy Plane
 
+I was lucky when it came to ideation as my friend had a proposal ready for me: build me a website that I can display my filmmaking portfolio. After discussing the purpose of the site we agreed on the notion that Sharp Sound & Vision will be a visually engaging and user-friendly website which displays a portfolio of videography projects to attract clients and collaborators. Past collaborators will be able to leave testimonials in order for H to grow her clientele. The primary target audience will be potential clientele who require media creation services and creative collaborators. 
+
 ### Site Goals
 
+- Admin access to create, read, update and delete elements of the ‘Services’, ‘Testimonials’ and ‘Portfolio’ pages.
+- Users are able to register and login to leave testimonials on the site.
+- Potential clients are able to view the past work of the filmmaker. 
+- The filmmaker will display their social links and contact information so that collaborators can get in touch. 
+
+
 ## Agile Methodologies - Project Management
+
+In order to visualise and manage the workflow of the project I chose to mimic the agile framework of Kanban boards via [GitHub Projects](https://github.com/users/phoebeW17/projects/6). When creating the project board I considered the "To Do," "In Progress," "In Testing," and "Done." phases. This allowed for continuous delivery and task tracking.
 
 ### MoSCoW Prioritization
 
@@ -124,7 +134,17 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 
 ## Scope Plane
 
+With a clear and concise purpose which fufilled the requirement of the MVP, I felt that the scope of the project did not have to grow any further. If further features came about they would be added to the Future Features section of this document. My main focus was to keep to the essential features: 
+
+- Have a visually engaging website which draws clients in.
+- Portfolio page with full CRUD functionality.
+- Services page with full CRUD functionality.
+- Testimonials page with full CRUD functionality.
+- Have a responsive webiste across devices.
+
 ## Structural Plane
+
+With a MVP and goals clear, I utilised the Individual Projects Overview excel document created by the CI Class Facilitator team which had a clear timeline and checkpoints which I aimed to hit along the way. I also broke down my daily coding and testing tasks in a planner notebook. 
 
 ## Skeleton & Surface Planes
 
@@ -209,6 +229,9 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 
 ### Database Schema - Entity Relationship Diagram
 
+![Database Schema](documentation/images/ERD.png)
+*Database Schema (ERD) for SS&V showing the relationships between features*
+
 ### Security
 
 **AllAuth**  
@@ -235,6 +258,8 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 - [Github](https://www.github.com) used for online storage of codebase and the Projects tool.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the SS&V application.
+- [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
+
 
 
 ## Libraries & Frameworks
@@ -308,6 +333,10 @@ I found the browser version of CoPilot to be useful as it was unobtrusive toward
 
 Amy Richardson from Code Institute for her unwavering positivity and support to myself and the bootcamp SY cohort.
 
-Spencer Barriball
+Roo Macarthur - Bootcamp Coding Coach, thank you for all your help.
 
+Spencer Barriball - Bootcamp SME, thank you for all your help.
 
+The South Yorkshire group - thanks for all the support, you're all great!
+
+Helena Sharp-Stephens - thank you my friend for letting your business idea be my guinea-pig project, I hope it is of use to you. 
