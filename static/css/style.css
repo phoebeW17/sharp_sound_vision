@@ -1,7 +1,3 @@
-<!-- Google Fonts CSS -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -9,6 +5,9 @@ body {
     color: #333;
 }
 
+h1 {
+    color: red;
+}
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #e7e7e7;
