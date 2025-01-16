@@ -24,6 +24,7 @@ from services import views as services_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', about_view, name='about'),
+    path("accounts/", include("allauth.urls")),
     path('portfolio/', include('portfolio.urls')),    
     path('services/', include('services.urls')),
     path('testimonial/', include('testimonial.urls')),
