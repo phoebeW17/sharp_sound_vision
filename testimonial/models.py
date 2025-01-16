@@ -21,3 +21,9 @@ class Testimonial(models.Model):
     posted_on = models.DateTimeField(auto_now_add=True)
     project_type = models.CharField(max_length=30, choices=PROJECT_CHOICES, blank=True, null=True)
     status = models.IntegerField(choices=STATUS, default=0)
+
+    class Meta:
+        ordering = ["-posted_on"]
+
+    def __str__(self):
+        return f"{self.title} | written by {self.user}"

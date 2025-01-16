@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Testimonial
 
 def testimonial_view(request):
-    return render(request, 'testimonial/testimonial.html')
+    testimonials = Testimonial.objects.filter(status=1).order_by('-posted_on')
+    return render(request, 'testimonial/testimonial.html', {'testimonials': testimonials})

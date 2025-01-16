@@ -3,6 +3,17 @@
 {% block title %}Testimonial Page{% endblock %}
 
 {% block content %}
-    <h1>Welcome to My website!</h1>
-    <p>This is the Testimonial page.</p>
+<h1>Welcome to My website!</h1>
+<p>This is the Testimonial page.</p>
+
+    <h1>Testimonials</h1>
+    <ul>
+        {% for testimonial in testimonials %}
+            <li>
+                <strong>{{ testimonial.title }}</strong><br>
+                {{ testimonial.text }}<br>
+                <em>By {{ testimonial.user.username }} on {{ testimonial.posted_on }}</em>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
