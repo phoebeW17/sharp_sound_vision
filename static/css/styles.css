@@ -29,6 +29,10 @@ body {
     color: #000;
 }
 
+.no-bullets {
+    list-style-type: none;
+}
+
 footer {
     background-color: #343a40;
     color: #fff;
