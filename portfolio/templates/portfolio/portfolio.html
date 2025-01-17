@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
-
+<!--This code block template was provided by Copilot-->
 {% block title %}Portfolio Page{% endblock %}
 
 {% block content %}
-    <h1>Welcome to My website!</h1>
-    <p>This is the portfolio page.</p>
+<h1>Portfolio</h1>
+<div class="portfolio-container">
+    {% for item in portfolio %}
+        <div class="portfolio-item">
+            <h2>{{ item.title }}</h2>
+            <div class="portfolio-media">
+                <img src="{{ item.media.url }}" alt="{{ item.title }}">
+            </div>
+            <p>{{ item.description }}</p>
+        </div>
+    {% empty %}
+        <p>No portfolio items to display.</p>
+    {% endfor %}
+</div>
 {% endblock %}

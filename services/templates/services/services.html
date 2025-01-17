@@ -6,12 +6,11 @@
 <h1>Our Services</h1>
 <ul class="no-bullets">
     {% for service in services %}
-        <li>
-            <strong>{{ service.title }}</strong><br>
-            {{ service.excerpt }}<br>
-            <a href="{{ service.example }}" target="_blank">Check out our work here!</a><br>
-            {{ service.description }}<br>
-        </li>
-    {% endfor %}
+    <li>
+        <strong>{{ service.title }}</strong><br>
+        {{ service.excerpt }}<br>
+        <a href="{{ service.example }}" target="_blank">Check out our work here!</a><br>
+        {{ service.description }}<br>
+    </li> {% endfor %}
 </ul>
 {% endblock %}
