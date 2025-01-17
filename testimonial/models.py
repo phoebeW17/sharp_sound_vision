@@ -16,6 +16,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Testimonial(models.Model):
     title = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=200, unique=True, blank=True, null=True)
     text = models.TextField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     posted_on = models.DateTimeField(auto_now_add=True)

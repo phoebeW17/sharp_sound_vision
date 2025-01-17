@@ -3,17 +3,45 @@
 {% block title %}Testimonial Page{% endblock %}
 
 {% block content %}
-<h1>Welcome to My website!</h1>
-<p>This is the Testimonial page.</p>
 
-    <h1>Testimonials</h1>
-    <ul class="no-bullets">
-        {% for testimonial in testimonials %}
-            <li>
-                <strong>{{ testimonial.title }}</strong><br>
-                {{ testimonial.text }}<br>
-                <em>By {{ testimonial.user.username }} on {{ testimonial.posted_on }}</em>
-            </li>
-        {% endfor %}
-    </ul>
-{% endblock %}
+<!-- CI LMS template starts here -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Testimonials</h1>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Testimonial Entries Column -->
+                <div class="col-12 mt-3 left">
+                    <div class="row">
+                        {% for testimonial in testimonials %}
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="image-container">
+                                    </div>
+                                    <h2 class="card-title">{{ testimonial.title }}</h2>
+                                    <p class="card-text">{{ testimonial.text }}</p>
+                                    </a>
+                                    <hr />
+                                    <div class="image-flash">
+                                        <p class="author">By {{ testimonial.user.username }}</p>
+                                    </div>
+                                    <p class="card-text text-muted h6">{{ testimonial.posted_on }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% if forloop.counter|divisibleby:3 %}
+                    </div>
+                    <div class="row">
+                        {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+            {% endblock %}
