@@ -6,7 +6,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-class Service(models.Model):
+class Portfolio(models.Model):
     title = models.CharField(max_length=100)
     media = CloudinaryField('media', default='placeholder')
     description = models.TextField()

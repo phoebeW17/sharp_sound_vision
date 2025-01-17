@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-   
     'portfolio',
     'testimonial',
     'services',
