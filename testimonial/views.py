@@ -9,3 +9,6 @@ class TestimonialList(generic.ListView):
 def testimonial_view(request):
     testimonials = Testimonial.objects.filter(status=1).order_by('-posted_on')
     return render(request, 'testimonial/testimonial.html', {'testimonials': testimonials})
+
+def testimonial_detail(request, slug):
+    queryset = Testimonial.objects.filter(status=1).order_by('-posted_on')

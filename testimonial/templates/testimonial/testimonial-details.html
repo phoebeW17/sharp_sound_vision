@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Testimonial Page{% endblock %}
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+
+<div class="container"> 
+    <h2>{{ testimonial.title }}</h2>
+    <p>{{ testimonial.text }}</p>
+    <p class="text-muted">Posted on: {{ testimonial.posted_on }}</p>
+    <p class="author">By {{ testimonial.user.username }}</p> <a href="{% url 'dashboard' %}" class="btn btn-secondary">Back to Dashboard</a> </div> 
+    
+{% endblock %}

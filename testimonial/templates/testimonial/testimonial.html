@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Testimonial Page{% endblock %}
 
@@ -30,8 +31,8 @@
                                     <div class="image-flash">
                                         <p class="author">By {{ testimonial.user.username }}</p>
                                     </div>
-                                    <p class="card-text text-muted h6">{{ testimonial.posted_on }}
-                                    </p>
+                                    <p class="card-text text-muted h6">{{ testimonial.posted_on }}</p>
+                                    <a href="{% url 'testimonial-detail' testimonial.id %}" class="btn btn-info">View Details</a>
                                 </div>
                             </div>
                         </div>
