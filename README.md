@@ -115,6 +115,7 @@ I chose to follow the MoSCoW Prioritization method for SS&V, identifying and lab
   
 - **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
 - **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
+- **Won't Haves**: these features won't be implemented in this iteration.
 
 ## User Stories
 
@@ -256,9 +257,15 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 - Python
 - [Git](https://git-scm.com/) used for version control.
 - [Github](https://www.github.com) used for online storage of codebase and the Projects tool.
+- VS Code and Gitpod used as a cloud-based IDE for development.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the SS&V application.
 - [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
+- Whitenoise was used for serving static files on Heroku.
+- PostgreSQL by CI was used as the Postgres database from Code Institute.
+- Bootstrap
+- Font Awesome
+- Favicon
 
 
 
@@ -272,8 +279,9 @@ Further information is available in the [requirements.txt file](requirements.txt
 - Balsamiq for Wireframes
 - Google Fonts
 - Pinterest
+- Lucidchart for ERD diagram.
 
-## AI Usage
+## AI Insights
 
 #### Tools used: 
 
@@ -308,30 +316,89 @@ I found the browser version of CoPilot to be useful as it was unobtrusive toward
 # Testing
 
 # Deployment
-  
-## Connecting to GitHub 
 
-## Django Project Setup
+The live site can be found deployed on Heroku: [Here](https://sharp-sound-vision-24e4365a348f.herokuapp.com/)
+
+### PostgreSQL Database
+
+This project uses the [CI PostgreSQL Database](https://dbs.ci-dbs.net/)
+
+It was obtained by: 
+
+- Logging into the CI LMS platform.
+- An email was then sent to me with the link to a new database.
+
+Please note if you are NOT a student with CI you must acquire your own PostgreSQL database if you plan to clone/fork this repository.
+
+### Cloudinary API
+
+This project uses Cloudinary to host our user-uploaded media.
+Cloudinary is an API, so an API key is required to connect the Django project securely.
+
+To obtain the key:
+
+- Create an account and log in.
+- Copy the API Environment Variable from the Dashboard.
+- Remove the CLOUDINARY_URL= in the env.py file so it looks like this:
+
+os.environ.setdefault("CLOUDINARY_URL", " URL copied from Cloudinary in last step ")
 
 ## Heroku deployment
 
+This project has been deployed via Heroku, a platform as a service enabling developers to build, run, and operate apps entirely in a cloud based environment.
+
+To start set up an account with Heroku, then:
+
+- Find the Heroku Dashboard and create a new app with your chosen name and region.
+- In the app's settings tab, ensure that the Config Var DISABLE_COLLECTSTATIC key has a value of 1. This is only temporary and can be removed before final deployment.
+- Other config vars will be added as you set up your project such as: Cloudinary key, Database URL and Secret Key.
+
+Heroku requires these project files in order to deploy:
+
+- requirements.txt
+- Procfile
+- runtime.txt
+
+Connect your app to your GitHub project in the Deploy tab of the dashboard.
+
+From there you can manually deploy by clicking the 'Deploy Branch' button. Your project should start to build. The build logs can be view in the 'More' menu.  
+
+The project should now be connected and deployed to Heroku!
+
 ## Clone project
+
+To clone the sharp_sound_vision repository:
+
+1. Find the sharp_sound_vision repository [here](https://github.com/phoebeW17/sharp_sound_vision).
+2. Click on the code button, in the clone section select the option you desire to clone the project with. Then copy the URL.
+3. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+4. Type 'git clone' into the terminal and then paste the link you copied in step 2. Press enter.
 
 ## Fork Project
 
+To fork the sharp_sound_vision repository:
+
+1. Log in to Github.
+2. Find the sharp_sound_vision repository [here](https://github.com/phoebeW17/sharp_sound_vision).
+3. Find the fork button in the right hand corner above the About section.
+4. You should now have a copy of the original repository in your own Github.
+
 # Credits
 
-- Amy Richardson from Code Institute for the ReadMe structure.
+- Amy Richardson from Code Institute and alumni CI student S. Simpson for the ReadMe structure.
 
 ## Code
 
 - Code Institute Learning Materials (Highlighted by comments in project).
+- CoPilot
 
 ## Media
 
 ## Acknowledgements
 
 Amy Richardson from Code Institute for her unwavering positivity and support to myself and the bootcamp SY cohort.
+
+Vasi Pavaloi - Learning Facilitator who did a great job of picking up where Amy left off, thank you for all your help.
 
 Roo Macarthur - Bootcamp Coding Coach, thank you for all your help.
 
@@ -340,3 +407,5 @@ Spencer Barriball - Bootcamp SME, thank you for all your help.
 The South Yorkshire group - thanks for all the support, you're all great!
 
 Helena Sharp-Stephens - thank you my friend for letting your business idea be my guinea-pig project, I hope it is of use to you. 
+
+To my lovely parents who supported me throughout.
