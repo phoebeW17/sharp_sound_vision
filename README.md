@@ -280,6 +280,7 @@ Further information is available in the [requirements.txt file](requirements.txt
 - Google Fonts
 - Pinterest
 - Lucidchart for ERD diagram.
+- JPG to WEBP Converter: cloudconvert
 
 ## AI Insights
 

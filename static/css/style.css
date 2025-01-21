@@ -1,6 +1,10 @@
+/*Google Fonts*/
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Global styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     background-color: #f8f9fa;
     color: #333;
 }
@@ -42,10 +46,16 @@ footer p {
     margin: 0;
 }
 
-/*Portfolio page styles*/
+/*About page*/
+
+/*Services page*/
+
+/*Portfolio page*/
 
 .portfolio-media img {
     max-width: 100%; /* Ensures the image will not exceed the container width */
     height: auto; /* Maintains the aspect ratio */
     max-height: 400px; /* Limits the height */
 }
+
+/*Testimonials page*/
