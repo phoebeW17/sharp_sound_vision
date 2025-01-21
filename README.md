@@ -89,6 +89,11 @@ Driven by the inspiration gathered on Pinterest, I found that a neutral set of c
 
 ### Font
 
+After researching accessible serif fonts I settled on Libre Baskerville by Google Fonts. I did want to use a serif font because it gives the site a classical and professional front.
+
+![screenshot of the font](documentation/images/chosen%20font.png)
+*Libre Baskerville*
+
 # Project Planning  
  
 ## Strategy Plane
