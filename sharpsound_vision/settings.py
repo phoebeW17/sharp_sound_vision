@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', "sharp-sound-vision-24e4365a348f.herokuapp.com",]
+ALLOWED_HOSTS = ['localhost', "sharp-sound-vision-24e4365a348f.herokuapp.com",'127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
 
@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary_storage', 
     'cloudinary',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'django_summernote',
     'django.contrib.sites',
     'allauth',
@@ -60,6 +62,9 @@ INSTALLED_APPS = [
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
