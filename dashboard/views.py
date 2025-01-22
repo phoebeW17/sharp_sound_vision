@@ -5,7 +5,7 @@ from testimonial.models import Testimonial
 
 @login_required
 def dashboard(request):
-    testimonials = Testimonial.objects.filter(author=request.user)
+    testimonials = Testimonial.objects.filter(user=request.user)
 
     return render(request, 'dashboard/dashboard.html', {
         'testimonials': testimonials,

@@ -1,6 +1,6 @@
 from django import forms
 
-from models import Testimonial
+from .models import Testimonial
 
 class TestimonialForm(forms.ModelForm):
     class Meta:
