@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from portfolio.views import portfolio_view, like_portfolio
 
 urlpatterns = [
-    path('', views.portfolio_view, name='portfolio'),
+    path('', portfolio_view, name='portfolio'),
+    path('like/<int:id>/', like_portfolio, name='like_portfolio'),
 ]

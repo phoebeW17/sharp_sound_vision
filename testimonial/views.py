@@ -26,7 +26,8 @@ def new_testimonial_view(request):
             return redirect('testimonial')
     else:
         form = TestimonialForm()
-    return render(request, 'testimonial/new-testimonial.html', {'form': form})
+    return render(request, 'testimonial/new-testimonial.html', {
+        'form': form})
 
 @login_required
 def edit_testimonial_view(request, id):
@@ -38,7 +39,8 @@ def edit_testimonial_view(request, id):
             return redirect('testimonial-detail', id=id)
     else:
         form = EditTestimonialForm(instance=testimonial)
-    return render(request, 'testimonial/edit-testimonial.html', {'form': form})
+    return render(request, 'testimonial/edit-testimonial.html', {
+        'form': form})
 
 @login_required
 def delete_testimonial_view(request, id):
@@ -46,5 +48,6 @@ def delete_testimonial_view(request, id):
     if request.method == 'POST':
         testimonial.delete()
         return redirect('testimonial')
-    return render(request, 'testimonial/delete-testimonial.html', {'testimonial': testimonial})
+    return render(request, 'testimonial/delete-testimonial.html', {
+        'testimonial': testimonial})
 

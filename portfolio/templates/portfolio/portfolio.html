@@ -16,6 +16,11 @@
                     </div>
                     <h2 class="card-title mt-3">{{ item.title }}</h2>
                     <p class="card-text">{{ item.description }}</p>
+                    <!-- <button onclick="likePortfolio('{{ item.id }}')" class="btn">Like</button> -->
+                    <a href="javascript:void(0);" onclick="likePortfolio({{ item.id }})" class="btn">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <p>Likes: <span id="likes-{{ item.id }}">{{ item.likes }}</span></p>
                 </div>
             </div>
         </div>
@@ -28,4 +33,15 @@
         {% endfor %}
     </div>
 </div>
+
+<script>
+    function likePortfolio(portfolioId) {
+        fetch(`/portfolio/like/${portfolioId}/`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(`likes-${portfolioId}`).textContent = data.likes;
+            })
+            .catch(error => console.error('Error:', error)); 
+    }
+</script>
 {% endblock %}
