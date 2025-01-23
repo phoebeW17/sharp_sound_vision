@@ -1,12 +1,8 @@
+from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404
-
 from testimonial.models import Testimonial
 
 @login_required
-def dashboard(request):
-    testimonials = Testimonial.objects.filter(user=request.user)
-
-    return render(request, 'dashboard/dashboard.html', {
-        'testimonials': testimonials,
-        })
+def user_dashboard_view(request):
+    user_testimonials = Testimonial.objects.filter(user=request.user)
+    return render(request, 'dashboard/dashboard.html', {'testimonials': user_testimonials})

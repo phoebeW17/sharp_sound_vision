@@ -1,23 +1,21 @@
 {% extends 'base.html' %}
 
-{% block title %}User Dashboard{% endblock %}
-
 {% block content %}
 <div class="container">
-    <h2>My Testimonials</h2>
-    <div class="row">
-        {% for testimonial in user_testimonials %}
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">{{ testimonial.title }}</h2>
-                    <p class="card-text">{{ testimonial.text|truncatewords:20 }}</p>  <!-- Display a snippet of the text -->
-                    <p class="text-muted">Posted on: {{ testimonial.posted_on }}</p>
-                    <a href="{% url 'testimonial-details' %}" class="btn btn-info">View Details</a>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+    <h1>Your Testimonials</h1>
+    {% if testimonials %}
+        <ul>
+            {% for testimonial in testimonials %}
+                <li>
+                    <h3>{{ testimonial.title }}</h3>
+                    <p>{{ testimonial.text }}</p>
+                    <a href="{% url 'edit-testimonial' testimonial.id %}">Edit</a>
+                    <a href="{% url 'delete-testimonial' testimonial.id %}">Delete</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have not posted any testimonials yet.</p>
+    {% endif %}
 </div>
 {% endblock %}

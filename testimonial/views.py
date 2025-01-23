@@ -1,20 +1,15 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Testimonial
 from django.contrib.auth.decorators import login_required
-
 from .forms import TestimonialForm, EditTestimonialForm
 
 def testimonial_list_view(request):
     testimonials = Testimonial.objects.all()
-
-    return render(request, 'testimonial/testimonial.html', {
-        'testimonials': testimonials
-    })
+    return render(request, 'testimonial/testimonial.html', {'testimonials': testimonials})
 
 def testimonial_detail_view(request, id):
     testimonial = get_object_or_404(Testimonial, id=id)
     testimonial_form = TestimonialForm()
-    
     return render(request, 'testimonial/testimonial-details.html', {
         'testimonial': testimonial,
         'testimonial_form': testimonial_form   
@@ -27,22 +22,29 @@ def new_testimonial_view(request):
         if form.is_valid():
             testimonial = form.save(commit=False)
             testimonial.user = request.user
-            form.save()
+            testimonial.save()
             return redirect('testimonial')
     else:
         form = TestimonialForm()
     return render(request, 'testimonial/new-testimonial.html', {'form': form})
 
-def edit(request, id):
+@login_required
+def edit_testimonial_view(request, id):
     testimonial = get_object_or_404(Testimonial, id=id)
     if request.method == 'POST':
-        # Handle form submission here
-        pass
-    return render(request, 'testimonial/edit-testimonial.html', {'testimonial': testimonial})
+        form = EditTestimonialForm(request.POST, instance=testimonial)
+        if form.is_valid():
+            form.save()
+            return redirect('testimonial-detail', id=id)
+    else:
+        form = EditTestimonialForm(instance=testimonial)
+    return render(request, 'testimonial/edit-testimonial.html', {'form': form})
 
-def delete(request, id):
+@login_required
+def delete_testimonial_view(request, id):
     testimonial = get_object_or_404(Testimonial, id=id)
     if request.method == 'POST':
         testimonial.delete()
         return redirect('testimonial')
     return render(request, 'testimonial/delete-testimonial.html', {'testimonial': testimonial})
+
