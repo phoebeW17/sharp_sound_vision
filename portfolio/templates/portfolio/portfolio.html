@@ -16,11 +16,26 @@
                     </div>
                     <h2 class="card-title mt-3">{{ item.title }}</h2>
                     <p class="card-text">{{ item.description }}</p>
-                    <!-- <button onclick="likePortfolio('{{ item.id }}')" class="btn">Like</button> -->
-                    <a href="javascript:void(0);" onclick="likePortfolio({{ item.id }})" class="btn">
+                    <!-- <p><i class="fas fa-heart"></i><span id="likes-{{ item.id }}">{{ item.likes }}</span></p> -->
+                    {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'like_portfolio' item.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn">
+                            {% if item.portfolio_likes.all %}
+                            <i class="fa-solid fa-heart"></i>
+                            {% else %}
+                            <i class="fa-regular fa-heart"></i>
+                            {% endif %}
+                        </button>
+                        <span id="likes-{{ item.id }}">{{ item.likes }}</span>
+                    </form>
+                    {% else %}
+                    <button class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="Please login or register to like this post">
                         <i class="fas fa-heart"></i>
-                    </a>
-                    <p>Likes: <span id="likes-{{ item.id }}">{{ item.likes }}</span></p>
+                    </button>
+                    <span id="likes-{{ item.id }}">{{ item.likes }}</span>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -35,13 +50,12 @@
 </div>
 
 <script>
-    function likePortfolio(portfolioId) {
-        fetch(`/portfolio/like/${portfolioId}/`)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById(`likes-${portfolioId}`).textContent = data.likes;
-            })
-            .catch(error => console.error('Error:', error)); 
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+    });
 </script>
+
+<script src="https://kit.fontawesome.com/c03f260391.js" crossorigin="anonymous"></script>
+
 {% endblock %}
