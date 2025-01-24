@@ -16,7 +16,6 @@
                     </div>
                     <h2 class="card-title mt-3">{{ item.title }}</h2>
                     <p class="card-text">{{ item.description }}</p>
-                    <!-- <p><i class="fas fa-heart"></i><span id="likes-{{ item.id }}">{{ item.likes }}</span></p> -->
                     {% if user.is_authenticated %}
                     <form method="post" action="{% url 'like_portfolio' item.id %}">
                         {% csrf_token %}
