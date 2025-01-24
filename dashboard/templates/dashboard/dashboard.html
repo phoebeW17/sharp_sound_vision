@@ -1,21 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
-    <h1>Your Testimonials</h1>
-    {% if testimonials %}
-        <ul>
+<div class="container mt-5">
+    <h1 class="text-center">Your Dashboard</h1>
+    <p class="text-center">Welcome to the dashboard, {{ user.username }}! The place to update your testimonials.</p>
+    <div class="row">
+        {% if testimonials %}
             {% for testimonial in testimonials %}
-                <li>
-                    <h3>{{ testimonial.title }}</h3>
-                    <p>{{ testimonial.text }}</p>
-                    <a href="{% url 'edit-testimonial' testimonial.id %}">Edit</a>
-                    <a href="{% url 'delete-testimonial' testimonial.id %}">Delete</a>
-                </li>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ testimonial.title }}</h2>
+                        <p class="card-text">{{ testimonial.text }}</p>
+                        <hr />
+                        <div class="d-flex">
+                            <a href="{% url 'edit-testimonial' testimonial.id %}" class="btn btn-info mb-2 me-2"><em>Edit</em></a>
+                            <a href="{% url 'delete-testimonial' testimonial.id %}" class="btn btn-info mb-2 me-2"><em>Delete</em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:3 %}
+        </div>
+        <div class="row">
+            {% endif %}
             {% endfor %}
-        </ul>
-    {% else %}
-        <p>You have not posted any testimonials yet.</p>
-    {% endif %}
+        {% else %}
+            <p class="text-center">You have not posted any testimonials yet.</p>
+        {% endif %}
+    </div>
 </div>
 {% endblock %}

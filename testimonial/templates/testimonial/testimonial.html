@@ -34,8 +34,8 @@
                                     <div class="image-flash">
                                         <p class="author">By {{ testimonial.user.username }}</p>
                                     </div>
-                                    <p class="card-text text-muted h6">{{ testimonial.posted_on }}</p>
-                                    <a href="{% url 'testimonial-detail' testimonial.id %}" class="btn btn-info">View Details</a>
+                                    <a href="{% url 'testimonial-detail' testimonial.id %}" class="btn btn-info">View
+                                        Details</a>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,6 @@
                     <div class="row">
                         {% endif %}
                         {% endfor %}
-
                     </div>
                 </div>
             </div>
@@ -53,5 +52,4 @@
                 <a href="{% url 'portfolio' %}" class="btn btn-info mb-2 me-2"><em>Portfolio</em></a>
                 <a href="{% url 'services' %}" class="btn btn-info mb-2 me-2"><em>Services</em></a>
             </div>
-{% endblock %}
-
+            {% endblock %}

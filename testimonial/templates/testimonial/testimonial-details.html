@@ -11,10 +11,14 @@
 <div class="container">
     <h2>{{ testimonial.title }}</h2>
     <p>{{ testimonial.text }}</p>
+    <p>Project Type: {{ testimonial.get_project_type_display}}</p>
     <p class="text-muted">Posted on: {{ testimonial.posted_on }}</p>
     <p class="author">By {{ testimonial.user.username }}</p>
+    <a href="{% url 'testimonial' %}" class="btn btn-info mb-2 ms-2"><em>Back to Testimonials</em></a>
 </div>
 
 {% endblock %}
+
+
 
 {% endif %}
