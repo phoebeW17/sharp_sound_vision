@@ -8,7 +8,7 @@
     <div class="row">
         {% for service in services %}
         <div class="col-md-3">
-            <div class="card mb-4">
+            <div class="card mb-4 h-100">
                 <div class="card-body">
                     <h2 class="card-title">{{ service.title }}</h2>
                     <p class="card-text">{{ service.excerpt }}</p>
@@ -26,7 +26,7 @@
         {% endfor %}
     </div>
 </div>
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center mt-3">
     <a href="{% url 'about' %}" class="btn btn-info mb-2 me-2"><em>About</em></a>
     <a href="{% url 'portfolio' %}" class="btn btn-info mb-2"><em>Portfolio</em></a>
     <a href="{% url 'testimonial' %}" class="btn btn-info mb-2 ms-2"><em>Testimonials</em></a>
