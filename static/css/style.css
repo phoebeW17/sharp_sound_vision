@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: rgb(224, 20, 207);
 }
 .navbar {
     background-color: #ffffff;
@@ -44,6 +44,14 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.footer a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+.footer a:hover {
+    color: #ddd; /* Optional: Change color on hover */
 }
 
 /*About page*/

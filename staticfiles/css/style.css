@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: rgb(224, 20, 207);
 }
 .navbar {
     background-color: #ffffff;
@@ -46,19 +46,12 @@ footer p {
     margin: 0;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
+.footer a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
 }
-
-.card-body {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-body .mt-auto {
-    margin-top: auto;
+.footer a:hover {
+    color: #ddd; /* Optional: Change color on hover */
 }
 
 /*About page*/
