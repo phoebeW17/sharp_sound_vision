@@ -1,14 +1,12 @@
 # Sharp Sound & Vision
 
-![ responsive screenshot]
-
 ## Introduction
 
 Sharp Sound & Vision (SS&V) is a web application which displays a portfolio of videography projects to attract clients and collaborators. The concept came about when speaking to a friend who wants to start up a film-making business. Existing platforms like social media and traditional portfolios often lack the cohesive and professional presentation needed to stand out in a competitive market. Therefore the site provides my friend with the ability to showcase her work and the feedback she has recieved from fellow collaborators or clients.
 
 SS&V has been developed as part of the Code Institute's 16 week Full-Stack Developer course as my final individual project - focusing on Django and Bootstrap frameworks, Database manipulation and CRUD functionality.
 
-View live site here : [Sharp Sound & Vision]()
+View live site here : [Sharp Sound & Vision](https://sharp-sound-vision-24e4365a348f.herokuapp.com/)
 
 For Admin access with relevant sign-in information:
 
@@ -466,16 +464,27 @@ To fork the sharp_sound_vision repository:
 3. Find the fork button in the right hand corner above the About section.
 4. You should now have a copy of the original repository in your own Github.
 
-# Credits
+# Credits & Resources
 
 - Amy Richardson from Code Institute and alumni CI student S. Simpson for the ReadMe structure.
 
 ## Code
 
-- Code Institute Learning Materials (Highlighted by comments in project).
+- Code Institute Learning Materials
 - CoPilot
+- How to create Instagram Like/Dislike button YouTube tutorial [link](https://www.youtube.com/watch?v=u8zMLHAaDXY)
+- How to style bootstrap cards [link](https://www.youtube.com/watch?v=wolSRMGJ-Ls)
+- S. Simpson's dashboard feature in their project Lens-Whisperer [link](https://github.com/shar-nm/lens-whisperer/tree/main)
+- Django static file management doc [link](https://docs.djangoproject.com/en/4.2/howto/static-files/#deployment)
+- Bootstrap popovers doc [link](https://getbootstrap.com/docs/5.3/components/popovers/)
 
 ## Media
+
+- Helena Stephens (Main page image)
+- Video by: Kaboompics.com from Pexels: [link](https://www.pexels.com/video/hands-woman-laptop-macbook-pro-4393362/)
+- Headshot image by Giorgio Trovato on Unsplash
+- Peak District landscape by P Whiteley
+- Orange flowers by Henry Be (@henry_be)
 
 ## Acknowledgements
 
@@ -483,12 +492,12 @@ Amy Richardson from Code Institute for her unwavering positivity and support to 
 
 Vasi Pavaloi - Learning Facilitator who did a great job of picking up where Amy left off, thank you for all your help.
 
-Roo Macarthur - Bootcamp Coding Coach, thank you for all your help.
+Roo Macarthur - Bootcamp Coding Coach, thank you for all your help, you've been brill.
 
-Spencer Barriball - Bootcamp SME, thank you for all your help.
+Spencer Barriball - Bootcamp SME, thank you for all your help and wisdom.
 
-The South Yorkshire group - thanks for all the support, you're all great!
+The South Yorkshire group - thanks for all the support, what a journey it's been, you're all great!
 
-Helena Sharp-Stephens - thank you my friend for letting your business idea be my guinea-pig project, I hope it is of use to you.
+Helena Sharp-Stephens - thank you my friend for letting your business idea be my guinea-pig project, I hope it is of use to you one day (soon).
 
 To my lovely parents who supported me throughout.
