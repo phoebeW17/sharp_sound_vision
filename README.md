@@ -294,29 +294,18 @@ I used Microsoft CoPilot in the browser as well as the chat function and pair pr
 
 #### Example Uses:
 
- - Use AI tools to assist in
-code creation
+| AI Use                                                            | Example                       | Notes                                                                                                                                                                                                             |
+|-------------------------------------------------------------------|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use AI tools to assist in code creation                           | [link](documentation/images/) | I found this useful as a learner as it added speed to the process, however I was concious to check that it was error free.                                                                                        |
+| Use AI tools to assist in debugging code                          | [link](documentation/images/) | Using CoPilot was incredibly useful when it came to defining errors. In some cases it would be a quick fix utilising the inline chat. Other times I asked for definitions of errors which aided my own debugging. |
+| Use AI tools to optimize code for performance and user experience |                               | Using Copilot to create code blocks and using the intuitive inline code writer was useful as it was efficient. However it does not automatically write accessible code and usually aria-labels need to be added.  |
 
- - Use AI tools to assist in
-debugging code
-
-  <details open>
-      <summary>CoPilot Deployment Troubleshooting and Bug Fix</summary>
-      <img src="documentation/images/copilot deploy bug fix.png">
-  </details>
-
-
-
-- Use AI tools to optimize
-code for performance and user
-experience
-
-- Use AI tools to create
-automated unit tests
 
 #### Reflection on AI Tools:
 
 I found the browser version of CoPilot to be useful as it was unobtrusive towards my code project but did have the drawback of not being able to view the sections of code I am working on. However, for the purpose of trouble-shooting I found this most useful.
+
+I will discuss it's uses in automated testing in the section below.
 
 # Testing
 
@@ -326,7 +315,7 @@ I found the browser version of CoPilot to be useful as it was unobtrusive toward
 
 For my HTML files I have used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-I have had to follow a different approach for validating my HTML for this project as the majority of my pages are developed using Jinja syntax such as '{% extends "base.html" %}' and '{{ form|crispy }}' and most require user authentication. The HTML validator will throw errors if I were to use my website's URL so I have had to follow the below approach for every page:
+Due to the fact the majority of my pages are developed using Jinja syntax such as '{% extends "base.html" %}' and '{{ form|crispy }}' and most require user authentication. The HTML validator threw errors when validating via my website's URL so I have had to follow the below approach for most pages:
 
 - Via the deployed Heroku app link, I have navigated to each individual page.
 - Right clicking on the screen/CTRL+U/⌘+U on Mac, allows a menu to appear, giving me the option to 'View page source'.
@@ -394,6 +383,7 @@ I have used the PEP8 CI Python Linter to validate the python files in my project
 | As a site user I want to see the social links and contact details clearly so that I can connect to the filmmaker.                                      | Yes      |                                                                                      |
 |                                                                                                                                                        |          |                                                                                      |
 
+### Automated Unit Tests
 
 
 # Deployment
