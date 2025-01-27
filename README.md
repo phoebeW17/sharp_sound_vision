@@ -134,6 +134,7 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 | As a **site user** I want to **navigate the site to find what section I want to access and explore** so that I can **find out more about the site.** | **MUST HAVE** |
 | As a **potential client**, I want to **see the services Sharp S&V offers**, so that I can **see what is most appropriate for my project.** | **SHOULD HAVE** |
 | As a **returning client**, I want to **see updates and new projects on the website** so that I can **stay informed about the videographer’s recent work.** | **SHOULD HAVE** |
+| As **a site user** I want to **leave my review via a like button** so that **I can give feedback on the portfolio work.**| **SHOULD HAVE** |
 | As a **potential client**, I want to **see an about page**, so that I can **know more about the videographer's professional background and approach to projects.**  | **COULD HAVE** |
 | As a **site user** I want to **see the social links and contact details clearly** so that **I can connect to the filmmaker.**  | **COULD HAVE** |
 
@@ -375,6 +376,27 @@ I have used the PEP8 CI Python Linter to validate the python files in my project
 | models.py   | PASS   |[no errors](documentation/testing/testimonial%20models.png)            |
 | urls.py     | PASS   |[no errors](documentation/testing/testimonial%20urls.png)            |
 | views.py    | PASS   |[no errors](documentation/testing/testimonial%20views.png)            |
+
+### Browser Compatability & Responsiveness
+
+### Lighthouse Audit
+
+### User Story Testing
+
+| User Story                                                                                                                                             | Achieved | Notes                                                                                |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------|
+| As a Site User I would like to register an account so that I can create on a post.                                                                     | Yes      |                                                                                      |
+| As a potential client, I want to read testimonials from previous clients so that I can gauge the videographer's reliability and professionalism.       | Yes      |                                                                                      |
+| As the site administrator, I want to update the pages on the site so that I can promote and organise my work.                                          | Yes      |                                                                                      |
+| As a site user I want to navigate the site to find what section I want to access and explore so that I can find out more about the site.               | Yes      |                                                                                      |
+| As a potential client, I want to see the services Sharp S&V offers, so that I can see what is most appropriate for my project.                         | Yes      |                                                                                      |
+| As a returning client, I want to see updates and new projects on the website so that I can stay informed about the videographer’s recent work.         | Yes      | A future feature will implement a news page. Updates can be found via the portfolio page. |
+| As a site user I want to leave my review via a like button so that I can give feedback on the portfolio work.                                          | Yes      |                                                                                      |
+| As a potential client, I want to see an about page, so that I can know more about the videographer's professional background and approach to projects. | Yes      |                                                                                      |
+| As a site user I want to see the social links and contact details clearly so that I can connect to the filmmaker.                                      | Yes      |                                                                                      |
+|                                                                                                                                                        |          |                                                                                      |
+
+
 
 # Deployment
 
