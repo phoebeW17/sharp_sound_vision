@@ -76,10 +76,10 @@ I chose to make a mood-board via Pinterest so I could gather inspiration and vis
 
 Driven by the inspiration gathered on Pinterest, I found that a neutral set of colours would work best to achieve both a classy and accessible look to the site. In the explore section of [Adobe Color](https://color.adobe.com/search?q=Neutral%20palette&t=term) I found the Palette of Persia. I also tested these with the Adobe Color Contrast Checker.
 
-![screenshot of colour scheme](documentation/images/AdobeColor-Palette%20of%20Persia_%20Brand%20Identity%20for%20Art%20Gallery.jpeg)
+![screenshot of colour scheme](documentation/images/AdobeColor-sharp%20colour%20scheme.jpeg)
 *Colour Scheme for Sharp Sound & Vision website*
 
-![screenshot of the contrast checker](documentation/images/colour%20contrast%20checker.png)
+![screenshot of the contrast checker](documentation/images/colour%20contrast%20real.png)
 *Colour Scheme Contrast Checker*
 
 ![screenshot of the colour blind safe test](documentation/images/COLOUR%20BLIND%20TEST.png)
@@ -241,17 +241,61 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 
 **AllAuth**
 
+I have used Django All Auth for handling the authentication within this project. It has allowed for users of the page to register and sign in to the site to makes the necessary or allowed changes to it.
+
 **Defensive Design**
 
-# Features
+To ensure a smooth and efficient user experience, I utilised defensive design feautures such as:
 
-## CRUD Functionality
+- Django messages provide the user with feedback to confirm actions taken e.g. successfully logged out.
+- Unregistered viewers of the site are encouraged to sign up should they want to contribute to the site.
+- Authentication and the dashboard feature is in place to make sure content is handled by the authors only.
+- Deletion of data is confirmed by a delay and a double check occurs.
+- Buttons are used to return to previous pages if a click occurs by mistake.
+
+# Features
 
 ## Feature Showcase
 
 *For features showcase, screenshots of the features in use were taken on Laptop/iPad Air/iPhone X*
 
+**Navigation bar**
+
+The navigation bar provides the user with links to all the pages they require quickly and users are able to browse via it as well. On medium and smaller screen sizes a burger icon toggle occurs so the links are still visible but not covering the page. The brand name acts as a link to the landing about page.
+
+**Landing About page**
+
+The landing 'About' page provides the user with a welcome to the business. We are met with a portrait of the founder so it is personable and professional. Button links are used to attract the user to explore more pages or directly leave a testimonial.
+
+**Footer**
+
+The footer displays contact, social and copyright details. It is simple and clean and available on all pages.
+
+**Portfolio**
+
+The portfolio is a place for SS&V to showcase their past projects. I have used bootstrap and cloduinary to make these posts uniform but unique. I implemented an orginal like/unlike CRUD feature, inspired from Instagram. This allows logged in users to leave 'kudos' on work they like. A pop over is displayed if the user is not logged in.
+
+**Services**
+
+Services can be updated via the admin panel and are displayed in bootstrap cards, giving a clean and professional look. I would like more visuals to be added in the future.
+
+**Testimonials**
+
+- Users are able to leave a testimonial, they can edit or delete said testimonial via CRUD functionality.
+
+**Register / Login / Log out**
+
+- Users are able to register an account so they are able to leave testimonials and likes. They then log in and log out, notified when they do so.
+
 ## Future Features
+
+**News Page**
+
+Admin would be able to upload news about current projects or potential training/workshops people could get involved in.
+
+**Calendar and Booking system**
+
+Users could book a service through a calendar and booking system. This would lead to users having a profile and utilsing the dashboard feature further.
 
 # Technologies & Languages Used
 
@@ -267,11 +311,9 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 - [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
 - Whitenoise was used for serving static files on Heroku.
 - PostgreSQL by CI was used as the Postgres database from Code Institute.
-- Bootstrap
+- Bootstrap 5
 - Font Awesome
 - Favicon
-
-
 
 ## Libraries & Frameworks
 
@@ -285,6 +327,7 @@ Further information is available in the [requirements.txt file](requirements.txt
 - Pinterest
 - Lucidchart for ERD diagram.
 - JPG to WEBP Converter: cloudconvert
+- Markdown Tables generator: https://www.tablesgenerator.com/markdown_tables
 
 ## AI Insights
 
