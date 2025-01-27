@@ -8,49 +8,47 @@
 <!-- CI LMS template starts here -->
 <div class="container-fluid">
     <div class="row">
-        <div class="container-fluid">
+        <div class="col-12 text-center">
+            <h1>Testimonials</h1>
+        </div>
+        <div class="col-12 text-center">
+            <p>Want to leave a testimonial? Click the button below!</p>
+            <a href="{% url 'new-testimonial' %}" class="btn btn-info"><em> ~ Write a Testimonial ~ </em></a>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Testimonial Entries Column -->
+        <div class="col-12 mt-3 left">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1>Testimonials</h1>
-                </div>
-                <div class="col-12 text-center">
-                    <p>Want to leave a testimonial? Click the button below!</p>
-                    <a href="{% url 'new-testimonial' %}" class="btn btn-info"><em> ~ Write a Testimonial ~ </em></a>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Testimonial Entries Column -->
-                <div class="col-12 mt-3 left">
-                    <div class="row">
-                        {% for testimonial in testimonials %}
-                        <div class="col-md-4">
-                            <div class="card mb-4 h-100">
-                                <div class="card-body">
-                                    <div class="image-container">
-                                    </div>
-                                    <h2 class="card-title">{{ testimonial.title }}</h2>
-                                    <p class="card-text">{{ testimonial.text }}</p>
-                                    <hr />
-                                    <div class="image-flash">
-                                        <p class="author">By {{ testimonial.user.username }}</p>
-                                    </div>
-                                    <a href="{% url 'testimonial-detail' testimonial.id %}" class="btn btn-info">View
-                                        Details</a>
-                                </div>
+                {% for testimonial in testimonials %}
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100">
+                        <div class="card-body">
+                            <div class="image-container">
                             </div>
+                            <h2 class="card-title">{{ testimonial.title }}</h2>
+                            <p class="card-text">{{ testimonial.text }}</p>
+                            <hr>
+                            <div class="image-flash">
+                                <p class="author">By {{ testimonial.user.username }}</p>
+                            </div>
+                            <a href="{% url 'testimonial-detail' testimonial.id %}" class="btn btn-info">View
+                                Details</a>
                         </div>
-                        {% if forloop.counter|divisibleby:3 %}
                     </div>
                 </div>
-                <div class="row">
-                    {% endif %}
-                    {% endfor %}
-                </div>
+                {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="d-flex justify-content-center mt-3">
-                <a href="{% url 'about' %}" class="btn btn-info mb-2 me-2"><em>About</em></a>
-                <a href="{% url 'portfolio' %}" class="btn btn-info mb-2 me-2"><em>Portfolio</em></a>
-                <a href="{% url 'services' %}" class="btn btn-info mb-2 me-2"><em>Services</em></a>
-            </div>
-
-{% endblock %}
+        </div>
+        <div class="row">
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <a href="{% url 'about' %}" class="btn btn-info mb-2 me-2"><em>About</em></a>
+        <a href="{% url 'portfolio' %}" class="btn btn-info mb-2 me-2"><em>Portfolio</em></a>
+        <a href="{% url 'services' %}" class="btn btn-info mb-2 me-2"><em>Services</em></a>
+    </div>
+</div>
+    {% endblock %}
