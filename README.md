@@ -4,13 +4,13 @@
 
 ## Introduction
 
-Sharp Sound & Vision (SS&V) is a web application which displays a portfolio of videography projects to attract clients and collaborators. The concept came about when speaking to a friend who wants to start up a film-making business. Existing platforms like social media and traditional portfolios often lack the cohesive and professional presentation needed to stand out in a competitive market. Therefore the site provides my friend with the ability to showcase her work and the feedback she has recieved from fellow collaborators or clients. 
+Sharp Sound & Vision (SS&V) is a web application which displays a portfolio of videography projects to attract clients and collaborators. The concept came about when speaking to a friend who wants to start up a film-making business. Existing platforms like social media and traditional portfolios often lack the cohesive and professional presentation needed to stand out in a competitive market. Therefore the site provides my friend with the ability to showcase her work and the feedback she has recieved from fellow collaborators or clients.
 
 SS&V has been developed as part of the Code Institute's 16 week Full-Stack Developer course as my final individual project - focusing on Django and Bootstrap frameworks, Database manipulation and CRUD functionality.
 
-View live site here : [Sharp Sound & Vision]()  
-  
-For Admin access with relevant sign-in information: 
+View live site here : [Sharp Sound & Vision]()
+
+For Admin access with relevant sign-in information:
 
 <hr>
 
@@ -78,7 +78,7 @@ I chose to make a mood-board via Pinterest so I could gather inspiration and vis
 
 Driven by the inspiration gathered on Pinterest, I found that a neutral set of colours would work best to achieve both a classy and accessible look to the site. In the explore section of [Adobe Color](https://color.adobe.com/search?q=Neutral%20palette&t=term) I found the Palette of Persia. I also tested these with the Adobe Color Contrast Checker.
 
-![screenshot of colour scheme](documentation/images/AdobeColor-Palette%20of%20Persia_%20Brand%20Identity%20for%20Art%20Gallery.jpeg)  
+![screenshot of colour scheme](documentation/images/AdobeColor-Palette%20of%20Persia_%20Brand%20Identity%20for%20Art%20Gallery.jpeg)
 *Colour Scheme for Sharp Sound & Vision website*
 
 ![screenshot of the contrast checker](documentation/images/colour%20contrast%20checker.png)
@@ -94,18 +94,18 @@ After researching accessible serif fonts I settled on Libre Baskerville by Googl
 ![screenshot of the font](documentation/images/chosen%20font.png)
 *Libre Baskerville*
 
-# Project Planning  
- 
+# Project Planning
+
 ## Strategy Plane
 
-I was lucky when it came to ideation as my friend had a proposal ready for me: build me a website that I can display my filmmaking portfolio. After discussing the purpose of the site we agreed on the notion that Sharp Sound & Vision will be a visually engaging and user-friendly website which displays a portfolio of videography projects to attract clients and collaborators. Past collaborators will be able to leave testimonials in order for H to grow her clientele. The primary target audience will be potential clientele who require media creation services and creative collaborators. 
+I was lucky when it came to ideation as my friend had a proposal ready for me: build me a website that I can display my filmmaking portfolio. After discussing the purpose of the site we agreed on the notion that Sharp Sound & Vision will be a visually engaging and user-friendly website which displays a portfolio of videography projects to attract clients and collaborators. Past collaborators will be able to leave testimonials in order for H to grow her clientele. The primary target audience will be potential clientele who require media creation services and creative collaborators.
 
 ### Site Goals
 
 - Admin access to create, read, update and delete elements of the ‘Services’, ‘Testimonials’ and ‘Portfolio’ pages.
 - Users are able to register and login to leave testimonials on the site.
-- Potential clients are able to view the past work of the filmmaker. 
-- The filmmaker will display their social links and contact information so that collaborators can get in touch. 
+- Potential clients are able to view the past work of the filmmaker.
+- The filmmaker will display their social links and contact information so that collaborators can get in touch.
 
 
 ## Agile Methodologies - Project Management
@@ -117,7 +117,7 @@ In order to visualise and manage the workflow of the project I chose to mimic th
 I chose to follow the MoSCoW Prioritization method for SS&V, identifying and labelling my:
 
 - **Must Haves**: the 'required', critical components of the project. Completing my 'Must Haves' helped me to reach the MVP (Minimum Viable Product) for this project early, allowing me to develop the project further than originally planned.
-  
+
 - **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
 - **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
 - **Won't Haves**: these features won't be implemented in this iteration.
@@ -140,7 +140,7 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 
 ## Scope Plane
 
-With a clear and concise purpose which fufilled the requirement of the MVP, I felt that the scope of the project did not have to grow any further. If further features came about they would be added to the Future Features section of this document. My main focus was to keep to the essential features: 
+With a clear and concise purpose which fufilled the requirement of the MVP, I felt that the scope of the project did not have to grow any further. If further features came about they would be added to the Future Features section of this document. My main focus was to keep to the essential features:
 
 - Have a visually engaging website which draws clients in.
 - Portfolio page with full CRUD functionality.
@@ -150,7 +150,7 @@ With a clear and concise purpose which fufilled the requirement of the MVP, I fe
 
 ## Structural Plane
 
-With a MVP and goals clear, I utilised the Individual Projects Overview excel document created by the CI Class Facilitator team which had a clear timeline and checkpoints which I aimed to hit along the way. I also broke down my daily coding and testing tasks in a planner notebook. 
+With a MVP and goals clear, I utilised the Individual Projects Overview excel document created by the CI Class Facilitator team which had a clear timeline and checkpoints which I aimed to hit along the way. I also broke down my daily coding and testing tasks in a planner notebook.
 
 ## Skeleton & Surface Planes
 
@@ -158,7 +158,7 @@ With a MVP and goals clear, I utilised the Individual Projects Overview excel do
 
 The wireframes for SS&V were created in Balsamiq. It is useful to quickly create wireframes with it's collection of templates for different devices and viewpoints. It was important to think of how I wanted the site to be viewed on tablets and desktops as well as mobiles so Balsamiq was a good tool to use.
 
-**Mobile/Tablet view for:**  
+**Mobile/Tablet view for:**
 
 - About
 - Services
@@ -166,43 +166,43 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 - Testimonials
 
 <details open>
-    <summary>Mobile About Page Wireframe</summary>  
-    <img src="documentation/wireframes/about mob.png">  
+    <summary>Mobile About Page Wireframe</summary>
+    <img src="documentation/wireframes/about mob.png">
 </details>
 
 <details>
-    <summary>Tablet About Page Wireframe</summary>  
-    <img src="documentation/wireframes/about tab.png">  
+    <summary>Tablet About Page Wireframe</summary>
+    <img src="documentation/wireframes/about tab.png">
 </details>
 
 <details>
-    <summary>Mobile Services Page Wireframe</summary>  
-    <img src="documentation/wireframes/services mob.png">  
+    <summary>Mobile Services Page Wireframe</summary>
+    <img src="documentation/wireframes/services mob.png">
 </details>
 
 <details>
-    <summary>Tablet Services Page Wireframe</summary>  
-    <img src="documentation/wireframes/services tab.png">  
+    <summary>Tablet Services Page Wireframe</summary>
+    <img src="documentation/wireframes/services tab.png">
 </details>
 
 <details>
-    <summary>Mobile Portfolio Page Wireframe</summary>  
-    <img src="documentation/wireframes/portfolio mob.png">  
+    <summary>Mobile Portfolio Page Wireframe</summary>
+    <img src="documentation/wireframes/portfolio mob.png">
 </details>
 
 <details>
-    <summary>Tablet Portfolio Page Wireframe</summary>  
-    <img src="documentation/wireframes/portfolio tab.png">  
+    <summary>Tablet Portfolio Page Wireframe</summary>
+    <img src="documentation/wireframes/portfolio tab.png">
 </details>
 
 <details>
-    <summary>Mobile Testimonials Page Wireframe</summary>  
-    <img src="documentation/wireframes/test mob.png">  
+    <summary>Mobile Testimonials Page Wireframe</summary>
+    <img src="documentation/wireframes/test mob.png">
 </details>
 
 <details>
-    <summary>Tablet Testimonials Page Wireframe</summary>  
-    <img src="documentation/wireframes/testimonials tab.png">  
+    <summary>Tablet Testimonials Page Wireframe</summary>
+    <img src="documentation/wireframes/testimonials tab.png">
 </details>
 <br>
 
@@ -214,23 +214,23 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 - Testimonials
 
 <details>
-    <summary>Desktop About Page Wireframe</summary>  
-    <img src="documentation/wireframes/about desk.png">  
+    <summary>Desktop About Page Wireframe</summary>
+    <img src="documentation/wireframes/about desk.png">
 </details>
 
 <details>
-    <summary>Desktop Services Page Wireframe</summary>  
-    <img src="documentation/wireframes/services desk.png">  
+    <summary>Desktop Services Page Wireframe</summary>
+    <img src="documentation/wireframes/services desk.png">
 </details>
 
 <details>
-    <summary>Desktop Portfolio Page Wireframe</summary>  
-    <img src="documentation/wireframes/portfolio desk.png">  
+    <summary>Desktop Portfolio Page Wireframe</summary>
+    <img src="documentation/wireframes/portfolio desk.png">
 </details>
 
 <details>
-    <summary>Desktop Testimonials Page Wireframe</summary>  
-    <img src="documentation/wireframes/testimonials desk.png">  
+    <summary>Desktop Testimonials Page Wireframe</summary>
+    <img src="documentation/wireframes/testimonials desk.png">
 </details>
 
 ### Database Schema - Entity Relationship Diagram
@@ -240,16 +240,16 @@ The wireframes for SS&V were created in Balsamiq. It is useful to quickly create
 
 ### Security
 
-**AllAuth**  
+**AllAuth**
 
-**Defensive Design**  
+**Defensive Design**
 
 # Features
 
 ## CRUD Functionality
 
-## Feature Showcase 
-  
+## Feature Showcase
+
 *For features showcase, screenshots of the features in use were taken on Laptop/iPad Air/iPhone X*
 
 ## Future Features
@@ -289,7 +289,7 @@ Further information is available in the [requirements.txt file](requirements.txt
 
 ## AI Insights
 
-#### Tools used: 
+#### Tools used:
 
 I used Microsoft CoPilot in the browser as well as the chat function and pair programmer in VS Code.
 
@@ -302,8 +302,8 @@ code creation
 debugging code
 
   <details open>
-      <summary>CoPilot Deployment Troubleshooting and Bug Fix</summary>  
-      <img src="documentation/images/copilot deploy bug fix.png">  
+      <summary>CoPilot Deployment Troubleshooting and Bug Fix</summary>
+      <img src="documentation/images/copilot deploy bug fix.png">
   </details>
 
 
@@ -315,11 +315,66 @@ experience
 - Use AI tools to create
 automated unit tests
 
-#### Reflection on AI Tools: 
+#### Reflection on AI Tools:
 
 I found the browser version of CoPilot to be useful as it was unobtrusive towards my code project but did have the drawback of not being able to view the sections of code I am working on. However, for the purpose of trouble-shooting I found this most useful.
 
 # Testing
+
+## Code Validation
+
+### HTML
+
+For my HTML files I have used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+I have had to follow a different approach for validating my HTML for this project as the majority of my pages are developed using Jinja syntax such as '{% extends "base.html" %}' and '{{ form|crispy }}' and most require user authentication. The HTML validator will throw errors if I were to use my website's URL so I have had to follow the below approach for every page:
+
+- Via the deployed Heroku app link, I have navigated to each individual page.
+- Right clicking on the screen/CTRL+U/⌘+U on Mac, allows a menu to appear, giving me the option to 'View page source'.
+- The complete HTML code for the deployed page will appear, allowing you to select the entire code using CTRL+A/⌘+A on Mac.
+- Paste the copied code into the [validate by input](https://validator.w3.org/#validate_by_input) option.
+- Check for errors and warnings, fix any issues, revalidate by following the above steps and record the results.
+
+<details>
+    <summary>HTML pages were checked with no major errors.
+</summary>
+    <img src="documentation/testing/html test.png">
+</details>
+
+### CSS
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file.
+
+![css validation](documentation/testing/css%20validator.png)
+
+### Python
+
+I have used the PEP8 CI Python Linter to validate the python files in my project.
+
+| File        | Result | Screenshot |
+|-------------|--------|------------|
+| dashboard   |        |            |
+| urls.py     | PASS   | [no errors](documentation/testing/dashboard%20urls.png)           |
+| views.py    | PASS   |[no errors](documentation/testing/dashboard%20views.png)            |
+|             |        |            |
+| portfolio   |        |            |
+| admin.py    | PASS   |[no errors](documentation/testing/portfolio%20admin.png)            |
+| models.py   | PASS   |[no errors](documentation/testing/portfolio%20models.png)            |
+| urls.py     | PASS   |[no errors](documentation/testing/portfolio%20urls.png)            |
+| views.py    | PASS   |[no errors](documentation/testing/portfolio%20views.png)            |
+|             |        |            |
+| services    |        |            |
+| admin.py    | PASS   |[no errors](documentation/testing/services%20admin.png)            |
+| models.py   | PASS   |[no errors](documentation/testing/services%20models.png)            |
+| urls.py     | PASS   |[no errors](documentation/testing/services%20urls.png)            |
+| views.py    | PASS   |[no errors](documentation/testing/services%20views.png)            |
+|             |        |            |
+| testimonial |        |            |
+| admin.py    | PASS   |[no errors](documentation/testing/testimonial%20admin.png)            |
+| forms.py    | PASS   |[no errors](documentation/testing/testimonial%20forms.png)            |
+| models.py   | PASS   |[no errors](documentation/testing/testimonial%20models.png)            |
+| urls.py     | PASS   |[no errors](documentation/testing/testimonial%20urls.png)            |
+| views.py    | PASS   |[no errors](documentation/testing/testimonial%20views.png)            |
 
 # Deployment
 
@@ -329,7 +384,7 @@ The live site can be found deployed on Heroku: [Here](https://sharp-sound-vision
 
 This project uses the [CI PostgreSQL Database](https://dbs.ci-dbs.net/)
 
-It was obtained by: 
+It was obtained by:
 
 - Logging into the CI LMS platform.
 - An email was then sent to me with the link to a new database.
@@ -367,7 +422,7 @@ Heroku requires these project files in order to deploy:
 
 Connect your app to your GitHub project in the Deploy tab of the dashboard.
 
-From there you can manually deploy by clicking the 'Deploy Branch' button. Your project should start to build. The build logs can be view in the 'More' menu.  
+From there you can manually deploy by clicking the 'Deploy Branch' button. Your project should start to build. The build logs can be view in the 'More' menu.
 
 The project should now be connected and deployed to Heroku!
 
@@ -412,6 +467,6 @@ Spencer Barriball - Bootcamp SME, thank you for all your help.
 
 The South Yorkshire group - thanks for all the support, you're all great!
 
-Helena Sharp-Stephens - thank you my friend for letting your business idea be my guinea-pig project, I hope it is of use to you. 
+Helena Sharp-Stephens - thank you my friend for letting your business idea be my guinea-pig project, I hope it is of use to you.
 
 To my lovely parents who supported me throughout.
