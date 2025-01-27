@@ -59,11 +59,11 @@ footer p {
 }
 
 .footer a {
-    color: inherit; /* Inherit the color from the parent element */
+    color: inherit;
     text-decoration: none; /* Remove underline */
 }
 .footer a:hover {
-    color: #ddd; /* Optional: Change color on hover */
+    color: #ddd; 
 }
 
 /*Portfolio page*/
@@ -76,4 +76,10 @@ footer p {
 
 .fa-heart {
     color: #8FC1B5;
+}
+
+/*Sign up page*/
+
+a {
+    color: #215470;
 }
