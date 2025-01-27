@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Service(models.Model):
     title = models.CharField(max_length=100)
     excerpt = models.CharField(max_length=200)

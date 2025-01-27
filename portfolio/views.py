@@ -3,9 +3,13 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from .models import Portfolio, Likes
 
+
 def portfolio_view(request):
     portfolio = Portfolio.objects.filter(status=1).order_by('-id')
-    return render(request, 'portfolio/portfolio.html', {'portfolio': portfolio})
+    return render(
+        request, 'portfolio/portfolio.html', {'portfolio': portfolio}
+    )
+
 
 def like_portfolio(request, id):
     user = request.user
@@ -18,7 +22,7 @@ def like_portfolio(request, id):
     else:
         liked = Likes.objects.filter(user=user, portfolio=portfolio).delete()
         current_likes = current_likes - 1
-    
+
     portfolio.likes = current_likes
     portfolio.save()
     return HttpResponseRedirect('/portfolio')
