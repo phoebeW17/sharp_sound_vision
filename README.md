@@ -409,7 +409,42 @@ I have used the PEP8 CI Python Linter to validate the python files in my project
 
 ### Browser Compatability & Responsiveness
 
+![Tests](documentation/testing/tests.png)
+![Tests](documentation/testing/tests%202.png)
+
+**iPhone**
+
+![iPhone](documentation/testing/IMG_7735.PNG)
+
+**iPad**
+
+![iPad](documentation/testing/ipad.jpg)
+
+**PC**
+
+![PC](documentation/testing/pc%20screenshot.png)
+
+### WAVE
+
+<details>
+    <summary>WAVE Accessibility Checks
+</summary>
+    <img src="documentation/testing/wave about pass.png">
+</details>
+
 ### Lighthouse Audit
+
+<details>
+    <summary>Lighthouse Audit checks on mobile
+</summary>
+    <img src="documentation/testing/services mob.png">
+</details>
+
+<details>
+    <summary>Lighthouse Audit checks on desktop
+</summary>
+    <img src="documentation/testing/about desk lighthouse.png">
+</details>
 
 ### User Story Testing
 
