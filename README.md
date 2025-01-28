@@ -420,7 +420,7 @@ I used Microsoft CoPilot in the browser as well as the chat function and pair pr
 
 I found the browser version of CoPilot to be useful as it was unobtrusive towards my code project but did have the drawback of not being able to view the sections of code I am working on. However, for the purpose of trouble-shooting I found this most useful.
 
-I will discuss it's uses in automated testing in the section below.
+I will discuss it's further uses in automated testing in the section below.
 
 # Testing
 
@@ -535,6 +535,9 @@ I have used the PEP8 CI Python Linter to validate the python files in my project
 
 ### Automated Unit Tests
 
+I utilised CoPilot to run automated unit tests within my Testimonials app. I asked originally for a test skeleton and used the inline copilot to suggest the defined tests. [Example](documentation/testing/test%20skeleton.png). After providing me with this, I ran the test in the terminal and found no fails. I then asked Copilot to produce an edge case test so that I could thoroughly check the model. [Test outcome](documentation/testing/updated%20test%20.png)
+
+Reflection: These AI automated tests, if requested precisely and incrementally are effective and efficient.
 
 # Deployment
 
