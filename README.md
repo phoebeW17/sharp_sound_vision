@@ -8,8 +8,6 @@ SS&V has been developed as part of the Code Institute's 16 week Full-Stack Devel
 
 View live site here : [Sharp Sound & Vision](https://sharp-sound-vision-24e4365a348f.herokuapp.com/)
 
-For Admin access with relevant sign-in information:
-
 <hr>
 
 ## Table of Contents
@@ -74,7 +72,7 @@ I chose to make a mood-board via Pinterest so I could gather inspiration and vis
 
 ### Colour Scheme
 
-Driven by the inspiration gathered on Pinterest, I found that a neutral set of colours would work best to achieve both a classy and accessible look to the site. In the explore section of [Adobe Color](https://color.adobe.com/search?q=Neutral%20palette&t=term) I found the Palette of Persia. I also tested these with the Adobe Color Contrast Checker.
+Driven by the inspiration gathered on Pinterest, I found that a neutral set of colours would work best to achieve both a classy and accessible look to the site. I liked the neutral palettes in the explore section of [Adobe Color](https://color.adobe.com/search?q=Neutral%20palette&t=term). I also tested these with the Adobe Color Contrast Checker.
 
 ![screenshot of colour scheme](documentation/images/AdobeColor-sharp%20colour%20scheme.jpeg)
 *Colour Scheme for Sharp Sound & Vision website*
@@ -142,10 +140,10 @@ User stories and features recorded and managed via a project board on [GitHub Pr
 With a clear and concise purpose which fufilled the requirement of the MVP, I felt that the scope of the project did not have to grow any further. If further features came about they would be added to the Future Features section of this document. My main focus was to keep to the essential features:
 
 - Have a visually engaging website which draws clients in.
-- Portfolio page with full CRUD functionality.
-- Services page with full CRUD functionality.
+- Portfolio page with full CRUD functionality to admin.
+- Services page with full CRUD functionality to admin.
 - Testimonials page with full CRUD functionality.
-- Have a responsive webiste across devices.
+- Have a responsive website across devices.
 
 ## Structural Plane
 
@@ -263,29 +261,103 @@ To ensure a smooth and efficient user experience, I utilised defensive design fe
 
 The navigation bar provides the user with links to all the pages they require quickly and users are able to browse via it as well. On medium and smaller screen sizes a burger icon toggle occurs so the links are still visible but not covering the page. The brand name acts as a link to the landing about page.
 
+<details>
+    <summary>Nav Bar Desktop</summary>
+    <img src="documentation/images/features/pc nav.png">
+</details>
+
+<details>
+    <summary>Nav Bar Mobile</summary>
+    <img src="documentation/images/features/mob nav.jpg">
+</details>
+
+<br>
+
 **Landing About page**
 
 The landing 'About' page provides the user with a welcome to the business. We are met with a portrait of the founder so it is personable and professional. Button links are used to attract the user to explore more pages or directly leave a testimonial.
+
+<details>
+    <summary>About</summary>
+    <img src="documentation/images/features/mob about.PNG">
+</details>
+
+<br>
 
 **Footer**
 
 The footer displays contact, social and copyright details. It is simple and clean and available on all pages.
 
+<details>
+    <summary>Footer</summary>
+    <img src="documentation/images/features/footer.png">
+</details>
+
+<br>
+
 **Portfolio**
 
 The portfolio is a place for SS&V to showcase their past projects. I have used bootstrap and cloduinary to make these posts uniform but unique. I implemented an orginal like/unlike CRUD feature, inspired from Instagram. This allows logged in users to leave 'kudos' on work they like. A pop over is displayed if the user is not logged in.
+
+<details>
+    <summary>Portfolio on iPad</summary>
+    <img src="documentation/testing/ipad.jpg">
+</details>
+
+<details>
+    <summary>Portfolio Like</summary>
+    <img src="documentation/images/features/like.png">
+</details>
+
+<br>
 
 **Services**
 
 Services can be updated via the admin panel and are displayed in bootstrap cards, giving a clean and professional look. I would like more visuals to be added in the future.
 
+<details>
+    <summary>Services</summary>
+    <img src="documentation/images/features/mob services.PNG">
+</details>
+
+<br>
+
 **Testimonials**
 
-- Users are able to leave a testimonial, they can edit or delete said testimonial via CRUD functionality.
+- Users are able to leave a testimonial via a form, they can edit or delete said testimonial via CRUD functionality.
+
+<details>
+    <summary>Testimonials</summary>
+    <img src="documentation/images/features/mob testimonials.PNG">
+</details>
+
+<details>
+    <summary>Testimonials form</summary>
+    <img src="documentation/images/features/testimonial desk.png">
+</details>
+
+<br>
 
 **Register / Login / Log out**
 
 - Users are able to register an account so they are able to leave testimonials and likes. They then log in and log out, notified when they do so.
+
+<details>
+    <summary>Register</summary>
+    <img src="documentation/images/features/sign up.png">
+</details>
+
+<details>
+    <summary>Login</summary>
+    <img src="documentation/images/features/sign in.png">
+</details>
+
+<details>
+    <summary>Log out</summary>
+    <img src="documentation/images/features/mob sign out.PNG">
+</details>
+
+<br>
 
 ## Future Features
 
