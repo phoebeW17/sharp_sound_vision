@@ -5,17 +5,17 @@ from django.contrib.auth.models import User
 
 # project choices for user in testimonial project type drop down list in tuple format
 # value and site viewable value for users
-PROJECT_CHOICES = [ 
-    ('brand_videos', 'Brand Videos'), 
-    ('explainer_videos', 'Explainer Videos'), 
+PROJECT_CHOICES = [
+    ('brand_videos', 'Brand Videos'),
+    ('explainer_videos', 'Explainer Videos'),
     ('photography', 'Photography'),
-    ('social_media_content', 'Social Media Content'), 
-] 
+    ('social_media_content', 'Social Media Content'),
+]
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
 class Testimonial(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, blank=False, null=False)
     slug = models.SlugField(max_length=200, unique=True, blank=True, null=True)
     text = models.TextField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
